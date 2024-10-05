@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThunderDex Test Builds</title>
+    <style>
+        @font-face {
+            font-family: 'UberMoveBold'; /* Define UberMoveBold font */
+            src: url('fonts/UberMove-Bold.otf') format('opentype'); /* Path to your UberMoveBold font file */
+        }
+
+        @font-face {
+            font-family: 'CustomFont'; /* Define the second font */
+            src: url('fonts/Google_Sans-500-100_0-0_0.ttf') format('truetype'); /* Path to your second font file */
+        }
+
+        @font-face {
+            font-family: 'ProductSansPlay'; /* Define the ProductSans-Play font */
+            src: url('fonts/ProductSans-Play.otf') format('opentype'); /* Path to your ProductSans-Play font file */
+        }
+
+        /* Material Design 3 Colors */
+        :root {
+            --primary-color: #B0E0E6; /* Primary color */
+            --on-primary-color: #ffffff; /* Text color on primary color */
+            --background-color: #25252f; /* Dark background color */
+            --surface-color: #1f2125; /* Dark surface color for list items (20% darker than #25252f) */
+            --on-surface-color: #ffffff; /* Text color on surface (white for readability) */
+            --hover-text-color: rgba(255, 255, 255, 0.85); /* Slightly darker text color on hover */
+            --link-color: #B4CBCE; /* Set link color to #B4CBCE */
+            --error-color: #b00020; /* Error color */
+            --on-error-color: #ffffff; /* Text color on error color */
+            --thunderdex-title-color: #c0d3d6; /* Custom color for ThunderDex title */
+            --card-shadow: rgba(0, 0, 0, 0.2); /* Shadow color for card */
+        }
+
+        body {
+            font-family: 'CustomFont', sans-serif; /* Use CustomFont for the body */
+            margin: 20px; /* Keep the outer margin */
+            background-color: var(--background-color); /* Dark background color */
+            color: var(--on-surface-color); /* White text color */
+            padding-left: 10px; /* Add left padding to the body for uniformity */
+        }
+
+        h1 {
+            font-family: 'UberMoveBold', sans-serif; /* Use UberMoveBold for the heading */
+            color: var(--thunderdex-title-color); /* Set the title color */
+            font-size: 48px; /* Increased heading size */
+            margin: 32px 0 16px 0; /* Consistent spacing: top, bottom, left, right */
+            line-height: 1.2; /* Adjusted line height for better spacing */
+        }
+
+        .date {
+            font-family: 'ProductSansPlay', sans-serif; /* Use ProductSans-Play for the date */
+            color: var(--on-surface-color); /* White text color */
+            font-size: 24px; /* Reduced size for better fit */
+            margin-bottom: 16px; /* Increased margin below the date text */
+            line-height: 1.5; /* Improved line height for better readability */
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0; /* Increased vertical margin for list items */
+            padding: 20px; /* Adjusted padding for better text spacing */
+            border: 1px solid #e0e0e0; /* Light border for surface */
+            border-radius: 12px; /* Rounded corners for list items */
+            background-color: var(--surface-color); /* Dark surface color for list items */
+            color: var(--on-surface-color); /* White text color for list items */
+            font-family: 'CustomFont', sans-serif; /* Use CustomFont for list items */
+            font-size: 20px; /* Increased size for list items */
+            line-height: 1.5; /* Improved line height for better readability */
+            transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; /* Smooth transitions */
+            box-shadow: 0 2px 5px var(--card-shadow); /* Shadow effect */
+            position: relative; /* Position for pseudo-element */
+            overflow: hidden; /* Clip overflow */
+        }
+
+        li:hover {
+            background-color: rgba(107, 173, 182, 0.3); /* Light hover effect on list items */
+            box-shadow: 0 4px 10px var(--card-shadow); /* Enhanced shadow on hover */
+            color: var(--hover-text-color); /* Darken text color on hover */
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--link-color); /* Use link color from variables */
+            font-weight: 600; /* Increased font weight for emphasis */
+            font-size: 20px; /* Match the list item font size */
+            display: inline-block; /* Make the link a block to allow padding */
+            padding: 10px; /* Add padding for a better clickable area */
+            border-radius: 4px; /* Rounded corners for the clickable area */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #9DD8E0; /* Slightly lighter hint color on hover */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+    </style>
+</head>
+<body>
+
+<h1>ThunderDex Test Builds</h1>
+
+<!-- Date display -->
+<div class="date">
+    <!-- Display fixed date -->
+    October 5th, 2024
+</div>
+
+<ul>
+    <li>
+        <a href="https://hifii.github.io/ThunderDexTests/APKs/10-05-2024/ThunderDex-10-05-2024_0339.apk" download>ThunderDex 5.2.0 Test #3</a>
+    </li>
+    <!-- Add more APKs here -->
+</ul>
+
+</body>
+</html>
